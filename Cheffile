@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'https://supermarket.getchef.com/api/v1'
+
+cookbook "wp-nginx",
+	:git => "https://github.com/snakeskin/wp-nginx.git"
+	
+cookbook "wordpress-cookbook",
+	:git => "https://github.com/snakeskin/wordpress-cookbook.git"
+
+cookbook "openssl",
+	:git => "https://github.com/opscode-cookbooks/openssl.git"
+	
+cookbook "wp-nfs",
+	:git => "https://github.com/snakeskin/wp-nfs.git"
+	
+cookbook "wp-apache2",
+	:git => "https://github.com/snakeskin/wp-apache2.git"
